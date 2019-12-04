@@ -230,7 +230,7 @@ country_codes = {
 
 
 def banner():
-    cprint("""                                                                                                                                                                                                                                                                                                           
+    cprint("""                                                                                                                                                               
                  kkkkkkkk                               
                  k::::::k                               
                  k::::::k                               
@@ -253,8 +253,7 @@ s::::::::::::::s k::::::k  k:::::k   p::::::::::::::::p
                                     p:::::::p           
                                     p:::::::p           
                                     ppppppppp           
-                                   
-                                         """, 'green')
+                                               """, 'green')
     print()
 
 
@@ -454,7 +453,7 @@ def start(target, counter, delay, ch, cc):
         print("             Failed Requests         : ", failed)
         print("==================================================================")
         print("              Use this for fun, not for revenge !!                ")
-        print("      This Bomber Was edited BY SKP credts to owner@speedx !!     ")
+        print("      This Bomber Was Edited by SKP credits to owner@SpeedX !!    ")
         print("==================================================================")
 
         try:
@@ -477,6 +476,19 @@ def start(target, counter, delay, ch, cc):
     exit()
 
 
+def update():
+    stuff_to_update = ['bomber.py', '.version']
+    for fl in stuff_to_update:
+        dat = urllib.request.urlopen(
+            "https://raw.githubusercontent.com/skp121/TBOMB-EDITED/master/" + fl).read()
+        file = open(fl, 'wb')
+        file.write(dat)
+        file.close()
+    print('\n\t\tUpdated Successfull !!!!')
+    print('\tPlease Run The Script Again...')
+    exit()
+
+
 os.system("clear")
 banner()
 try:
@@ -486,7 +498,24 @@ except Exception:
     print("\tPlease Connect To Internet To Continue...\n")
     input('Exiting....\n Press Enter To Continue....')
     exit()
-
+print('\tChecking For Updates...')
+ver = urllib.request.urlopen(
+    "https://raw.githubusercontent.com/skp121/TBOMB-EDITED/master/.version").read().decode('utf-8')
+verl = ''
+try:
+    verl = open(".version", 'r').read()
+except Exception:
+    pass
+if ver != verl:
+    print('\n\t\tAn Update is Available....')
+    print('\tStarting Update...')
+    update()
+print("Your Version is Up-To-Date")
+print('\n\n\t\t\tStarting TBomb...\n\n')
+try:
+    noti = urllib.request.urlopen(
+        "https://raw.githubusercontent.com/skp121/TBOMB-EDITED/master/.notify").read().decode('utf-8')
+    noti = noti.upper().strip()
     if len(noti) > 10:
         print('\n\n\tNOTIFICATION: ' + noti + '\n\n')
 except Exception:
@@ -524,16 +553,16 @@ if type == 1:
         print("\t\tYou Have Entered " + str(nm) +
               ".\n\tNormalizing Value To 200")
         nm = 200
-    dl = float(input("Enter Delay time (in seconds) [Recommended 10 sec ] : "))
+    dl = float(input("Enter Delay time (in seconds) [Recommended 5 sec ] : "))
 elif type == 0:
     if cc == "91":
         nm = int(input("Enter Number of Messages To Send(0 For Unlimited): "))
         dl = float(
-            input("Enter Delay time (in seconds) [Recommended 2 sec ] : "))
+            input("Enter Delay time (in seconds) [Recommended 1 sec ] : "))
     else:
         nm = int(input("Enter Number of Messages To Send: "))
         dl = float(
-            input("Enter Delay time (in seconds) [Recommended 10 sec ] : "))
+            input("Enter Delay time (in seconds) [Recommended 5 sec ] : "))
 maxlim = 0
 if cc == "91":
     maxlim = 50000
@@ -579,7 +608,7 @@ if cbomb:
     exit()
 if nm == 0:
     nt = int(input("\tNumber Of Threads(10 to 40) : "))
-    if nt <= 0 or nt >= 30:
+    if nt <= 0 or nt >= 50:
         print('\tTBomb Shows Better Result in 10 to 25 Threads\n\t\tStill Continuing....')
     print("\n\nPlease Remember That This Is in Experimental Stage And Is Incredibly Fast...")
     t = [None] * nt
@@ -592,7 +621,7 @@ if nm == 0:
     print("             Delay               : ", dl)
     print("==================================================================")
     print("              Use this for fun, not for revenge !!                ")
-    print("      This Bomber Was edited BY SKP credits to owner@speedx !!    ")
+    print("     This Bomber Was Edited by SKP credits to owner@SpeedX !!     ")
     print("==================================================================")
     input('\n\nPress CTRL+Z To STOP Bomber... \nPress Enter To Start Bomber...\n')
     os.system('rm *.xxx* > /dev/null 2>&1')
@@ -619,4 +648,4 @@ if nm == 0:
             checkinternet()
 else:
     start(pn, nm, dl, ch, '91')
-    exit()
+    exit()                         

@@ -229,12 +229,15 @@ country_codes = {
     '260': 'ZM',
     '263': 'ZW'
 }
+
+
 def clr():
     if os.name == 'nt':
         os.system('cls')
      else:
-        os.system('clear')
+         os.system('clear')
 def banner():
+    
     clr()
     logo="""                                                                                                                                                               
                  kkkkkkkk                               

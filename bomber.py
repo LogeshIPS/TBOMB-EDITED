@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 from datetime import datetime
-from termcolor import cprint
 import os
 import hashlib
 import sys
@@ -17,7 +16,10 @@ try:
 except ImportError:
     print('[!] Error: some dependencies are not installed')
     print('Type \'pip install -r requirements.txt\' to install all required packages')
-    exit()
+    exit()                                                                                                     
+
+colors=['\033[1;31m','\033[1;32m','\033[1;33m','\033[1;34m','\033[1;35m','\033[1;36m']
+W='\033[0m'
 
 # If You Wanna Take Credits For This Code, Please Look Yourrself Again
 
@@ -227,10 +229,14 @@ country_codes = {
     '260': 'ZM',
     '263': 'ZW'
 }
-
-
+def clr():
+    if os.name == 'nt':
+        os.system('cls')
+     else:
+        os.system('clear')
 def banner():
-    cprint("""                                                                                                                                                               
+    clr()
+    logo="""                                                                                                                                                               
                  kkkkkkkk                               
                  k::::::k                               
                  k::::::k                               
@@ -253,11 +259,12 @@ s::::::::::::::s k::::::k  k:::::k   p::::::::::::::::p
                                     p:::::::p           
                                     p:::::::p           
                                     ppppppppp           
-                                               """, 'green')
-    print()
+                                               """
+    print(random.choice(colours)+logo+W)
+    print("/n")
 
 
-# Counts Number Of SMS in Infinite Mode
+
 count_inf = 0
 
 
@@ -409,7 +416,7 @@ def remsp(num):
 
 
 def start(target, counter, delay, ch, cc):
-    os.system("clear")
+    clr()
     banner()
     failed = 0
     requested = 0
@@ -441,6 +448,7 @@ def start(target, counter, delay, ch, cc):
                     print('\n\n\tSorry Your Country is Not Supported...')
                     input('Press Enter To Exit...')
                     exit()
+        print(random.choice(colours))
         print("==================================================================")
         print("                BOMBING in progress, please wait !!               ")
         print("     Please keep your data connection active during bombing !!    ")
@@ -487,7 +495,7 @@ def update():
     exit()
 
 
-os.system("clear")
+clr()
 banner()
 try:
     urllib.request.urlopen('https://www.google.com')
@@ -546,26 +554,26 @@ try:
 except Exception:
     type = 0
 if type == 1:
-    nm = int(input("Enter Number of Calls To Send(Maximum 200): "))
+    nm = int(input("Enter Number of Calls To Send(Maximum 2000): "))
     if nm > 200:
         print("\t\tYou Have Entered " + str(nm) +
-              ".\n\tNormalizing Value To 200")
-        nm = 200
-    dl = float(input("Enter Delay time (in seconds) [Recommended 5 sec ] : "))
+              ".\n\tNormalizing Value To 1000")
+        nm = 1000
+    dl = float(input("Enter Delay time (in seconds) [Recommended 10 sec ] : "))
 elif type == 0:
     if cc == "91":
         nm = int(input("Enter Number of Messages To Send(0 For Unlimited): "))
         dl = float(
-            input("Enter Delay time (in seconds) [Recommended 1 sec ] : "))
+            input("Enter Delay time (in seconds) [Recommended 2 sec ] : "))
     else:
         nm = int(input("Enter Number of Messages To Send: "))
         dl = float(
-            input("Enter Delay time (in seconds) [Recommended 5 sec ] : "))
+            input("Enter Delay time (in seconds) [Recommended 10 sec ] : "))
 maxlim = 0
 if cc == "91":
-    maxlim = 50000
+    maxlim = 500000000
 else:
-    maxlim = 30000
+    maxlim = 300000000
 if nm > maxlim:
     print('\n\n\tSorry Due To Misuse Of This Script We Only Provide ' +
           str(maxlim) + ' SMS At Once...\n\n')
@@ -610,6 +618,7 @@ if nm == 0:
         print('\tTBomb Shows Better Result in 10 to 25 Threads\n\t\tStill Continuing....')
     print("\n\nPlease Remember That This Is in Experimental Stage And Is Incredibly Fast...")
     t = [None] * nt
+    print(random.choice(colors))
     print("\n\n==================================================================")
     print("                Gearing Up Bomber, please wait !!               ")
     print("     Please keep your data connection active during bombing !!    ")

@@ -17,8 +17,10 @@ except ImportError :#line:17:except ImportError:
     print ('[!] Error: some dependencies are not installed')#line:18:print('[!] Error: some dependencies are not installed')
     print ('Type \'pip install -r requirements.txt\' to install all required packages')#line:19:print('Type \'pip install -r requirements.txt\' to install all required packages')
     exit ()#line:20:exit()
+    
     colors=['\033[1;31m','\033[1;32m','\033[1;33m','\033[1;34m','\033[1;35m','\033[1;36m']
 W='\033[0m'
+
 country_codes ={'93':'AF','355':'AL','213':'DZ','376':'AD','244':'AO','672':'AQ','54':'AR','374':'AM','297':'AW','61':'AU','43':'AT','994':'AZ','973':'BH','880':'BD','375':'BY','32':'BE','501':'BZ','229':'BJ','975':'BT','591':'BO','387':'BA','267':'BW','55':'BR','246':'IO','673':'BN','359':'BG','226':'BF','257':'BI','855':'KH','237':'CM','238':'CV','236':'CF','235':'TD','56':'CL','86':'CN','57':'CO','269':'KM','682':'CK','506':'CR','385':'HR','53':'CU','599':'AN','357':'CY','420':'CZ','243':'CD','45':'DK','253':'DJ','670':'TL','593':'EC','20':'EG','503':'SV','240':'GQ','291':'ER','372':'EE','251':'ET','500':'FK','298':'FO','679':'FJ','358':'FI','33':'FR','689':'PF','241':'GA','220':'GM','995':'GE','49':'DE','233':'GH','350':'GI','30':'GR','299':'GL','502':'GT','224':'GN','245':'GW','592':'GY','509':'HT','504':'HN','852':'HK','36':'HU','354':'IS','91':'IN','62':'ID','98':'IR','964':'IQ','353':'IE','972':'IL','39':'IT','225':'CI','81':'JP','962':'JO','254':'KE','686':'KI','383':'XK','965':'KW','996':'KG','856':'LA','371':'LV','961':'LB','266':'LS','231':'LR','218':'LY','423':'LI','370':'LT','352':'LU','853':'MO','389':'MK','261':'MG','265':'MW','60':'MY','960':'MV','223':'ML','356':'MT','692':'MH','222':'MR','230':'MU','262':'RE','52':'MX','691':'FM','373':'MD','377':'MC','976':'MN','382':'ME','212':'EH','258':'MZ','95':'MM','264':'NA','674':'NR','977':'NP','31':'NL','687':'NC','64':'NZ','505':'NI','227':'NE','234':'NG','683':'NU','850':'KP','47':'SJ','968':'OM','92':'PK','680':'PW','970':'PS','507':'PA','675':'PG','595':'PY','51':'PE','63':'PH','48':'PL','351':'PT','974':'QA','242':'CG','40':'RO','7':'RU','250':'RW','590':'MF','290':'SH','508':'PM','685':'WS','378':'SM','239':'ST','966':'SA','221':'SN','381':'RS','248':'SC','232':'SL','65':'SG','421':'SK','386':'SI','677':'SB','252':'SO','27':'ZA','82':'KR','211':'SS','34':'ES','94':'LK','249':'SD','597':'SR','268':'SZ','46':'SE','41':'CH','963':'SY','886':'TW','992':'TJ','255':'TZ','66':'TH','228':'TG','690':'TK','676':'TO','216':'TN','90':'TR','993':'TM','688':'TV','256':'UG','380':'UA','971':'AE','44':'GB','1':'US','598':'UY','998':'UZ','678':'VU','379':'VA','58':'VE','84':'VN','681':'WF','967':'YE','260':'ZM','263':'ZW'}#line:229:}
 def banner ():
                                                       
@@ -50,7 +52,7 @@ s::::::::::::::s k::::::k  k:::::k   p::::::::::::::::p
     print(random.choice(colors)+logo+W)
     print("\n")
             
-    print ()#line:253:print()
+ 
 count_inf =0 #line:257:count_inf = 0
 def infinite (OOO0OO00OO0O0OO0O ,O0OO00O000O00000O ,O0OO0OO0OO00O000O ,OOO0O000000000OO0 ):#line:260:def infinite(pn, dl, ch, max):
     global count_inf #line:261:global count_inf
@@ -208,6 +210,7 @@ def start (OOO000OO00O000000 ,O0OOOOOOO000OOOO0 ,O0000000OOO00OOO0 ,O00OOO000OOO
                     print ('\t\tPlease Send A Mail To ggspeedx29@gmail.com To Let Us Know...')#line:439:'\t\tPlease Send A Mail To ggspeedx29@gmail.com To Let Us Know...')
                     input ('Press Enter To Exit...')#line:440:input('Press Enter To Exit...')
                     exit ()#line:441:exit()
+        print(random.choice(colors))
         print ("==================================================================")#line:442:print("==================================================================")
         print ("                BOMBING in progress, please wait !!               ")#line:443:print("                BOMBING in progress, please wait !!               ")
         print ("     Please keep your data connection active during bombing !!    ")#line:444:print("     Please keep your data connection active during bombing !!    ")
@@ -234,6 +237,7 @@ def start (OOO000OO00O000000 ,O0OOOOOOO000OOOO0 ,O0000000OOO00OOO0 ,O00OOO000OOO
         time .sleep (float (O0000000OOO00OOO0 ))#line:466:time.sleep(float(delay))
         if OOOOO0O0O0O00OO0O %3 ==0 :#line:467:if requested % 3 == 0:
             checkinternet ()#line:468:checkinternet()
+    print(W)
     print ('\n\nBombing Completed..')#line:469:print('\n\nBombing Completed..')
     os .system ('rm *.xxx* > /dev/null 2>&1')#line:470:os.system('rm *.xxx* > /dev/null 2>&1')
     banner ()#line:471:banner()
@@ -336,6 +340,7 @@ if nm ==0 :#line:575:if nm == 0:
         print ('\tTBomb Shows Better Result in 10 to 50 Threads\n\t\tStill Continuing....')#line:578:print('\tTBomb Shows Better Result in 10 to 50 Threads\n\t\tStill Continuing....')
     print ("\n\nPlease Remember That This Is in Experimental Stage And Is Incredibly Fast...")#line:579:print("\n\nPlease Remember That This Is in Experimental Stage And Is Incredibly Fast...")
     t =[None ]*nt #line:580:t = [None] * nt
+    print (random.choice(colors))
     print ("\n\n==================================================================")#line:581:print("\n\n==================================================================")
     print ("                Gearing Up Bomber, please wait !!               ")#line:582:print("                Gearing Up Bomber, please wait !!               ")
     print ("     Please keep your data connection active during bombing !!    ")#line:583:print("     Please keep your data connection active during bombing !!    ")
@@ -347,6 +352,7 @@ if nm ==0 :#line:575:if nm == 0:
     print ("              Use this for fun, not for revenge !!                ")#line:589:print("              Use this for fun, not for revenge !!                ")
     print ("              This Bomber Was edited BY SKP credits to owner@speedx !! ")#line:590:print("              This Bomber Was edited BY BLACKLABEL cradits to owner@speedx !! ")
     print ("==================================================================")#line:591:print("==================================================================")
+    print(W)
     input ('\n\nPress CTRL+Z To STOP Bomber... \nPress Enter To Start Bomber...\n')#line:592:input('\n\nPress CTRL+Z To STOP Bomber... \nPress Enter To Start Bomber...\n')
     os .system ('rm *.xxx* > /dev/null 2>&1')#line:593:os.system('rm *.xxx* > /dev/null 2>&1')
     print ("\n\nStarting Bomb....")#line:594:print("\n\nStarting Bomb....")

@@ -1,4 +1,4 @@
-<h1 align="center">TBomb v1.7b</h1>
+<h1 align="center">TBOMB-EDITED v1.7b</h1>
 <p align="center">An open-source SMS/call bomber for Linux And Termux.</p><br>
 
 ## Note:
@@ -33,7 +33,7 @@ If output looks like `Python 3` - Congrats, Python 3 is installed properly.
 
 ## Usage:
 
-Run these commands to run TBomb
+Run these commands to run TBOMB-EDITED
 
 ### > For Termux:
 
@@ -49,7 +49,7 @@ To use the bomber type the following commands in Termux:
 pkg install git
 pkg install python
 git clone https://github.com/skp121/TBOMB-EDITED.git
-cd TBomb
+cd TBOMB-EDITED
 chmod +x TBomb.sh
 ./TBomb.sh
 ```
@@ -67,7 +67,7 @@ To use the bomber type the following commands in Linux terminal:
 ```
 sudo apt install git
 git clone https://github.com/skp121/TBOMB-EDITED.git
-cd TBomb
+cd TBOMB-EDITED
 chmod +x TBomb.sh
 sudo bash TBomb.sh
 ```
@@ -87,15 +87,10 @@ brew install python3
 sudo easy_install pip
 sudo pip install --upgrade pip
 git clone https://github.com/skp121/TBOMB-EDITED.git
-cd TBomb
+cd TBOMB-EDITED
 chmod +x TBomb.sh
 
-# Run TBomb:
+# Run TBOMB-EDITED:
 
 sudo bash TBomb.sh
 ```
-
-## Demontrative Video:
-
-- Watch Indian Bombing Method <a href="https://youtu.be/9KWkwsr_QGw">here</a><br>
-- Watch International Bombing Method <a href="https://youtu.be/JqsHkyIcnPM">here</a><br>

@@ -1,9 +1,13 @@
 #!/bin/bash
 clear
-echo -e "\e[4;34m ☆𝕯𝖆𝖗𝖐𝕬𝖓𝖌𝖊𝖑☆ Productions !!! \e[0m"
-echo -e "\e[1;31m PrᴇຮᴇŇts✨ \e[0m"
-echo -e "\e[1;32m ◤𝒯𝐵𝒪𝑀𝐵-𝐸𝒟𝐼𝒯𝐸𝒟◢ \e[0m"
-echo "Press 🌿𝔈𝔫𝔱𝔢𝔯 To Continue"
+   echo -e "\e[4;34m ☆𝕯𝖆𝖗𝖐𝕬𝖓𝖌𝖊𝖑☆ Productions !!! \e[0m"
+
+       echo -e "\e[1;31m PrᴇຮᴇŇts \e[0m"
+
+ echo -e "\e[1;32m ◤𝒯𝐵𝒪𝑀𝐵-𝐸𝒟𝐼𝒯𝐸𝒟◢ \e[0m"
+ 
+ 
+           echo "Press 𝔈𝔫𝔱𝔢𝔯 To Continue"
 read a1
 if [[ -s update.DarkAngel ]];then
 echo "All Requirements Found...."
@@ -23,11 +27,14 @@ while :
 do
 rm *.xxx >/dev/null 2>&1
 clear
-echo -e "\e[1;32m 🐺T฿Θᴹ฿ED𝕴TED \e[0m"  
-echo -e "\e[1;31m Created By \e[0m"
-echo -e "\e[1;34m ⎝⎝✧𝔇arkͥAnͣgͫ𝖊l✧⎠⎠ \e[0m"
+       echo -e "\e[1;32m T฿Θᴹ฿ED𝕴TED \e[0m"  
+
+        echo -e "\e[1;31m Created By \e[0m"
+
+    echo -e "\e[1;34m ⎝⎝✧𝔇arkͥAnͣgͫ𝖊l✧⎠⎠ \e[0m"
 echo " "
-echo -e "\e[1;31m Lets 💫ɾօçҟ the World  !!! \e[0m"
+
+echo -e "\e[4;31m Lets ≪ʀᴏᴄᴋ≫ the ⦃𝒲øℝ𝓵d⦄  !!! \e[0m"
 echo " "
 echo "Click 1 To  Start SMS Bomber "
 echo "Click 2 To  Start Call Bomber "

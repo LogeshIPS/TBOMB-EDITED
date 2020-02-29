@@ -5,7 +5,7 @@ echo -e "\e[1;34m Presents \e[0m"
 echo -e "\e[1;32m TBOMB-EDITED \e[0m"
 echo "Press Enter To Continue"
 read a1
-if [[ -s update.Dark Angel ]];then
+if [[ -s update.DarkAngel ]];then
 echo "All Requirements Found...."
 else
 echo 'Installing Requirements....'

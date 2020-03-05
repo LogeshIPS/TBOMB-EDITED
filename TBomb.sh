@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-   echo -e "\e[4;34m ☆𝕯𝖆𝖗𝖐𝕬𝖓𝖌𝖊𝖑☆ Productions !!! \e[0m"
+   echo -e "\e[4;32m ☆𝕯𝖆𝖗𝖐𝕬𝖓𝖌𝖊𝖑☆ Productions !!! \e[0m"
 
        echo -e "\e[1;31m PrᴇຮᴇŇts \e[0m"
 
@@ -81,7 +81,7 @@ clear
 echo -e "\e[1;33m"
 figlet TB0MB-EDITED
 echo -e "\e[1;34mCreated By \e[1;34m"
-toilet -f mono12 -F border Dark Anel
+toilet -f mono12 -F border Dark Angel
 echo  " "
 echo -e "\e[1;32m                   Features\e[1;34m"
 echo "  [+] Unlimited And Super-Fast Bombing"
